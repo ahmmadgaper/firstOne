@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1%;
+    border: solid 0.5vw black;
+    height: fit-content;
+    margin: 1%;
+    width: auto;
+    color: black;
+}
+
+img{
+    width: 5vw;
+    height: 8vh;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  img:hover {
+    filter: drop-shadow(0 0 0.8em #f8731a);
+  }
+
+.navbar div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 0.5;
+    background-color: orchid;
+    position: sticky;
+}

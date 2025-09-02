@@ -1,0 +1,42 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    font-size: 16px;
+}
+
+div :has(div) {
+ padding: 4%;
+ background-color: lightgray;
+ width: fit-content;
+ height: fit-content;
+ overflow: auto;
+ position: relative;
+ top: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ box-sizing: border-box;
+ outline: none;
+ border: none;
+ box-shadow: rgba(0,0,0,0.5)  0 0 0.6vw 0.01vw;
+ transition: all 0.3s ease-in-out 0.1s;
+}
+
+div :has(div):hover{
+top: 50px;
+}
+
+
+div div:first-child {
+ border-bottom: 0.2vw solid rgba(128,128,128,0.4);
+}
+
+div div:last-child {
+    border: none;
+    text-align: left;
+}
